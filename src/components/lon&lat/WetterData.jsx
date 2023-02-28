@@ -32,8 +32,9 @@ const WetterData = () => {
                 <p>{data.weather[0].description} in {data.name} </p>    
             }</article>
             <img src={`http://openweathermap.org/img/wn/${weatherIconCode}@2x.png`} alt="current weather" /> 
-            <article><p>Current: {data?.main?.temp}</p></article>
-            <article><p>Wind Speed: {data?.wind?.speed} m/std</p></article>
+            {/* <img src={`http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`} </img> */}
+            <article><p>Aktuell: {data?.main?.temp}°C</p></article>
+            <article><p>Windgeschwindigkeit: {data?.wind?.speed} m/std</p></article>
 
         </section>
     )
