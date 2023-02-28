@@ -21,7 +21,7 @@ const WetterData = () => {
 
     return(
         <section>
-            <article>
+            <article className="btnSection">
                 <GeoButton ort='Hamburg' long='53.5536424' lang='9.9595822' setGeo={setGeo} />
                 <GeoButton ort='Berlin' long='52.5195422' lang='13.3981549' setGeo={setGeo}/>
                 <GeoButton ort='Köln' long='50.9578353' lang='6.8272402' setGeo={setGeo}/>
